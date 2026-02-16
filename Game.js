@@ -8,15 +8,15 @@ while (true){
     if (userGuess == 999){
         break;
     }
-    if (userGuess > random_Number){
+    else if (userGuess > random_Number){
         alert("The number is too high");
         i++
     }
-   if (userGuess < random_Number){
+   else if (userGuess < random_Number){
         alert("The number is too low ");
         i++
    } 
-    if (userGuess == random_Number){
+    else{
         alert("Congratulations, you have guess it " + i + " amount of times");
         break;
     }
